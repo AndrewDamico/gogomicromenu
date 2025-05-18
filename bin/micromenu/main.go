@@ -1,8 +1,6 @@
 package main
 
-import (
-	"micromenu"
-)
+import "github.com/yourusername/micromenu"
 
 func main() {
 	menu := micromenu.NewMenu(40, 8).

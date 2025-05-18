@@ -1,4 +1,4 @@
-package micromenu
+package main
 
 import (
 	"fmt"
