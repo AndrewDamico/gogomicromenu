@@ -1,23 +1,23 @@
 package main
 
-import "github.com/yourusername/micromenu"
+import "github.com/AndrewDamico/gogomicromenu"
 
 func main() {
-	menu := micromenu.NewMenu(40, 8).
-		AddDiv(&micromenu.Div{
+	menu := gogomicromenu.NewMenu(40, 8).
+		AddDiv(&gogomicromenu.Div{
 			Name:      "Header",
-			Type:      micromenu.TitleDiv,
+			Type:      gogomicromenu.TitleDiv,
 			Priority:  1,
-			Location:  micromenu.Top,
-			Record:    []micromenu.RecordItem{{Key: "", Value: "Demo Menu"}},
+			Location:  gogomicromenu.Top,
+			Record:    []gogomicromenu.RecordItem{{Key: "", Value: "Demo Menu"}},
 			Decorator: "=",
 		}).
-		AddDiv(&micromenu.Div{
+		AddDiv(&gogomicromenu.Div{
 			Name:     "Main",
-			Type:     micromenu.MenuDiv,
+			Type:     gogomicromenu.MenuDiv,
 			Priority: 2,
-			Location: micromenu.Top,
-			Record: []micromenu.RecordItem{
+			Location: gogomicromenu.Top,
+			Record: []gogomicromenu.RecordItem{
 				{Key: "1", Value: "Option 1"},
 				{Key: "2", Value: "Option 2"},
 			},
