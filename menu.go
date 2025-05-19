@@ -1,4 +1,4 @@
-package main
+package gogomicromenu
 
 import (
 	"fmt"
